@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Label /> should render Label with theme props 1`] = `
+<label
+  className="sc-htpNat jBHPye"
+/>
+`;
+
+exports[`Test <SelectStyled /> should render SelectStyled with theme props 1`] = `
+<select
+  className="sc-ifAKCX loyIEh"
+/>
+`;
+
+exports[`Test <SelectWrap /> should render SelectWrap with theme props 1`] = `
+<div
+  className="sc-bxivhb gNWrow"
+/>
+`;

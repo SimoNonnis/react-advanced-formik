@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test modelAddressInfo() should transform payload array to new object 1`] = `
+Object {
+  "building_name": "Waterside",
+  "building_number": "",
+  "county": "Worcestershire",
+  "postcode": "WR5 3DA",
+  "street": "Basin Road",
+  "sub_building": "",
+  "town": "Worcester",
+}
+`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <VendorCardOuter /> component should render VendorCardOuter correctly with theme 1`] = `
+<div
+  className="sc-htpNat bRMpvI"
+/>
+`;

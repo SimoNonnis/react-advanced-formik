@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test getError() should get the error 1`] = `"one"`;
+
+exports[`Test getError() should return a function waiting for a key 1`] = `[Function]`;

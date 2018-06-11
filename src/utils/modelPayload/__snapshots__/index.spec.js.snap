@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test modelPayload() should delete living_at_the_property_you_are_selling_for_at_least_twelve_months key 1`] = `Object {}`;
+
+exports[`Test modelPayload() should delete primary key 1`] = `Object {}`;
+
+exports[`Test modelPayload() should leave false unchanged 1`] = `
+Object {
+  "test": false,
+}
+`;
+
+exports[`Test modelPayload() should leave null unchanged 1`] = `
+Object {
+  "test": null,
+}
+`;
+
+exports[`Test modelPayload() should leave null unchanged 2`] = `
+Object {
+  "test": null,
+}
+`;
+
+exports[`Test modelPayload() should leave the value unchanged 1`] = `
+Object {
+  "test": "test string",
+}
+`;
+
+exports[`Test modelPayload() should leave true unchanged 1`] = `
+Object {
+  "test": true,
+}
+`;
+
+exports[`Test modelPayload() should transform empty string value to null 1`] = `
+Object {
+  "test": null,
+}
+`;
+
+exports[`Test modelPayload() should transform string value "false" to boolean false 1`] = `
+Object {
+  "test": false,
+}
+`;
+
+exports[`Test modelPayload() should transform string value "true" to boolean true 1`] = `
+Object {
+  "test": true,
+}
+`;

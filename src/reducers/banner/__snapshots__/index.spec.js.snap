@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`banner reducer returns the initialState when the action is null 1`] = `
+Object {
+  "dismissTime": 7000,
+  "message": null,
+  "type": null,
+}
+`;
+
+exports[`banner reducer should set state back to initialState 1`] = `
+Object {
+  "dismissTime": 7000,
+  "message": null,
+  "type": null,
+}
+`;
+
+exports[`banner reducer should set state message to payload and type to system 1`] = `
+Object {
+  "0": "E",
+  "1": "r",
+  "10": "a",
+  "11": "g",
+  "12": "e",
+  "2": "r",
+  "3": "o",
+  "4": "r",
+  "5": " ",
+  "6": "m",
+  "7": "e",
+  "8": "s",
+  "9": "s",
+  "dismissTime": 7000,
+  "message": null,
+  "type": "system",
+}
+`;
+
+exports[`banner reducer should set state message to payload and type to user 1`] = `
+Object {
+  "0": "E",
+  "1": "r",
+  "10": "a",
+  "11": "g",
+  "12": "e",
+  "2": "r",
+  "3": "o",
+  "4": "r",
+  "5": " ",
+  "6": "m",
+  "7": "e",
+  "8": "s",
+  "9": "s",
+  "dismissTime": 7000,
+  "message": null,
+  "type": "user",
+}
+`;

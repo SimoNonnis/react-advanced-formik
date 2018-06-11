@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <PageLayout /> component should render PageLayout correctly with back props 1`] = `
+<styled.div>
+  <styled.div>
+    <Styled(Link)
+      to="/test"
+    >
+      <styled.div />
+       Back
+    </Styled(Link)>
+  </styled.div>
+  <styled.div />
+</styled.div>
+`;
+
+exports[`Test <PageLayout /> component should render PageLayout correctly with required props 1`] = `
+<styled.div>
+  <styled.div />
+</styled.div>
+`;
+
+exports[`Test <PageLayout /> component should render PageLayout correctly with title props 1`] = `
+<styled.div>
+  <styled.div>
+    <Styled(H1)>
+      Title
+    </Styled(H1)>
+  </styled.div>
+</styled.div>
+`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test modelValue() should return null if value is null 1`] = `null`;
+
+exports[`Test modelValue() should transform the value to a string 1`] = `"true"`;

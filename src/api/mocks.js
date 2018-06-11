@@ -1,0 +1,156 @@
+export const mockVendorsList = [
+  {
+    id: 4,
+    primary: true,
+    type: 'legal_owner',
+    present_at_home_visit: true,
+    title: 'Dr.',
+    first_names: 'Tim',
+    last_name: 'Lewis',
+    email_address: 'noah83@example.com',
+    phone_number: '07000000000',
+    date_of_birth: '1975-01-01',
+    occupation: 'developer',
+    politically_exposed: null,
+    living_at_the_property_you_are_selling: false,
+    living_at_the_property_you_are_selling_for_at_least_twelve_months: null,
+    country_of_residence: 'United Kingdom',
+    addresses: [
+      {
+        id: 1,
+        sub_building: null,
+        building_name: null,
+        building_number: '68',
+        street: 'Bell Brook',
+        town: 'West Damien',
+        county: 'Suffolk',
+        postcode: 'SE26 6JG',
+        position: 0,
+      },
+      {
+        id: 2,
+        sub_building: null,
+        building_name: null,
+        building_number: '617',
+        street: 'Frank Plaza',
+        town: 'Carolefurt',
+        county: 'Suffolk',
+        postcode: 'AB11 5QE',
+        position: 1,
+      },
+    ],
+    owned_since_month: null,
+    owned_since_year: null,
+    reason_for_selling: 'Selling to buy a larger house',
+  },
+  {
+    id: 14,
+    primary: false,
+    type: 'beneficial_owner',
+    present_at_home_visit: true,
+    title: 'Mr.',
+    first_names: 'New',
+    last_name: 'Person',
+    email_address: null,
+    phone_number: null,
+    date_of_birth: null,
+    occupation: null,
+    politically_exposed: null,
+    living_at_the_property_you_are_selling: null,
+    living_at_the_property_you_are_selling_for_at_least_twelve_months: null,
+    country_of_residence: null,
+    addresses: [],
+    owned_since_month: null,
+    owned_since_year: null,
+    reason_for_selling: null,
+  },
+];
+
+export const mockVendor = {
+  id: 4,
+  primary: true,
+  type: 'legal_owner',
+  present_at_home_visit: true,
+  title: 'Mr.',
+  first_names: 'Simon',
+  last_name: 'Nonnis',
+};
+
+export const mockAddress = {
+  sub_building: 'Unit 1A',
+  building_name: 'The Building',
+  building_number: '14',
+  street: 'Church Field Road',
+  town: 'Sudbury',
+  county: 'Suffolk',
+  postcode: 'CO10 2YA',
+  position: 0,
+};
+
+export const mockAddressesList = [
+  { Id: '52509479.00', StreetAddress: 'P C A Predict', Place: 'Waterside Basin Road Worcester' },
+  { Id: '53327590.00', StreetAddress: 'Lock Keepers Cottage Basin Road', Place: 'Worcester' },
+  { Id: '26772356.00', StreetAddress: 'Lock View Basin Road', Place: 'Worcester' },
+];
+
+export const mockAddressInfo = [
+  {
+    Udprn: '52509479',
+    Company: 'P C A Predict',
+    Department: '',
+    Line1: 'Waterside',
+    Line2: 'Basin Road',
+    Line3: '',
+    Line4: '',
+    Line5: '',
+    PostTown: 'Worcester',
+    County: 'Worcestershire',
+    Postcode: 'WR5 3DA',
+    Mailsort: '94142',
+    Barcode: '(WR53DA1PX)',
+    Type: 'SmallBusiness',
+    DeliveryPointSuffix: '1P',
+    SubBuilding: '',
+    BuildingName: 'Waterside',
+    BuildingNumber: '',
+    PrimaryStreet: 'Basin Road',
+    SecondaryStreet: '',
+    DoubleDependentLocality: '',
+    DependentLocality: '',
+    PoBox: '',
+    PrimaryStreetName: 'Basin',
+    PrimaryStreetType: 'Road',
+    SecondaryStreetName: '',
+    SecondaryStreetType: '',
+    CountryName: 'England',
+    Location: { id: null, latitude: 52.1829787, longitude: -2.2216089 },
+  },
+];
+
+export const mockDocumentTypeList = {
+  identification_list_a: [
+    {
+      list: 'A',
+      type: 'proof_of_id_uk_passport',
+      label: 'UK Passport',
+      description: 'Current valid (signed) full UK Passport',
+    },
+  ],
+  identification_list_b: [
+    {
+      list: 'B',
+      type: 'proof_of_id_bank_society_or_union_statement',
+      label: 'Bank Statement',
+      description:
+        'Bank, Building Society or Credit Union Statement dated within the last 3 months (not printed off the internet)',
+    },
+  ],
+  proof_of_address_list_c: [
+    {
+      list: 'C',
+      type: 'proof_of_address_bank_statement',
+      label: 'Bank Statement',
+      description: 'Bank Statement (dated in the last three months) – may be an e-copy',
+    },
+  ],
+};

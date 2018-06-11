@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test modelPayload() should transform payload array to new modeled array 1`] = `
+Array [
+  Object {
+    "id": "52509479.00",
+    "place": "Waterside Basin Road Worcester",
+    "street": "P C A Predict",
+  },
+  Object {
+    "id": "53327590.00",
+    "place": "Worcester",
+    "street": "Lock Keepers Cottage Basin Road",
+  },
+  Object {
+    "id": "26772356.00",
+    "place": "Worcester",
+    "street": "Lock View Basin Road",
+  },
+]
+`;

@@ -1,0 +1,150 @@
+{
+  "name": "react-advanced-formik",
+  "version": "0.0.1",
+  "description": "React advanced formik",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "clean": "rm -rf ./dist",
+    "lint": "eslint --ext .js,.jsx src",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "dev": "yarn webpack-dev-server --env.env=dev",
+    "build": "yarn run clean && webpack --env.env=prod",
+    "release": "yarn run clean && yarn lint && yarn test && yarn build",
+    "legacy": "webpack --progress --config webpack.legacy.js",
+    "legacy:clean": "rm -rf /legacyApp/web/js/components/aml-site/",
+    "legacy:dev": "yarn legacy --env.environment=dev --watch",
+    "legacy:test": "yarn legacy --env.environment=test --watch",
+    "legacy:build": "yarn legacy --env.environment=dev && yarn legacy --env.environment=test && yarn legacy --env.environment=sandbox && yarn legacy --env.environment=stage && yarn legacy --env.environment=prod",
+    "legacy:release": "yarn run legacy:clean && yarn lint && yarn test && yarn legacy:build"
+  },
+  "author": "simon.nonnis@protonmail.com",
+  "dependencies": {
+    "@housesimple/react-components": "bitbucket:housesimple/js-react-components#3.1.1",
+    "@housesimple/redux": "bitbucket:housesimple/js-redux#1.0.1",
+    "@housesimple/webpack-config": "bitbucket:housesimple/js-webpack-config#1.0.4",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.23.0",
+    "es6-promise": "^4.1.0",
+    "form-data": "^2.3.2",
+    "formik": "^0.11.11",
+    "grid-styled": "^3.2.1",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "mockdate": "^2.0.2",
+    "polished": "^1.9.2",
+    "prop-types": "^15.5.x",
+    "react": "^15.5.4",
+    "react-async-component": "^1.0.2",
+    "react-dom": "^15.5.4",
+    "react-hot-component-loader": "^1.0.3",
+    "react-hot-loader": "^3.1.3",
+    "react-redux": "^5.0.4",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-test-renderer": "^15.5.4",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.2",
+    "redux-immutable": "^4.0.0",
+    "redux-mock-store": "^1.5.1",
+    "redux-saga": "^0.14.7",
+    "reselect": "^3.0.0",
+    "styled-components": "^3.1.6",
+    "webpack-manifest-plugin": "^2.0.0-rc.2",
+    "yup": "^0.24.1"
+  },
+  "devDependencies": {
+    "@housesimple/eslint-config-housesimple": "bitbucket:housesimple/js-eslint-config#1.0.1",
+    "axios-mock-adapter": "^1.14.1",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^19.0.0",
+    "babel-plugin-styled-components": "^1.3.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015-webpack": "^6.4.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.18.0",
+    "cssnano": "^3.8.1",
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^2.0.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.7.0",
+    "identity-obj-proxy": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^19.0.2",
+    "jest-styled-components": "^4.9.0",
+    "minimist": "^1.2.0",
+    "react-addons-test-utils": "^15.5.1",
+    "webpack": "^2.4.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@housesimple/housesimple",
+      "@housesimple/housesimple/webpack"
+    ]
+  },
+  "jest": {
+    "globals": {
+      "globals": {
+        "api": {
+          "legacy": {
+            "baseUrl": "https://legacy-site.apps.dev/api"
+          }
+        }
+      }
+    },
+    "roots": [
+      "./src"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "./src"
+    ],
+    "moduleNameMapper": {
+      "\\.(scss)$": "identity-obj-proxy"
+    },
+    "verbose": true
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "react",
+      "stage-2"
+    ],
+    "plugins": [
+      [
+        "babel-plugin-styled-components",
+        {
+          "displayName": true
+        }
+      ],
+      [
+        "transform-runtime",
+        {
+          "polyfill": false,
+          "regenerator": true
+        }
+      ],
+      "react-hot-loader/babel"
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          "es2015",
+          "react",
+          "stage-2"
+        ]
+      }
+    }
+  }
+}
