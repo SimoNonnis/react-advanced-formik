@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { requestDeleteVendor } from 'actions/vendors';
 import { ModalBox } from '@housesimple/react-components';
+import rootDomNode from 'utils/rootDomNode';
 import { ControlButton } from 'components/_common/Styled';
 import {
   RemoveVendorContainer,
@@ -61,7 +62,7 @@ class RemoveVendor extends PureComponent {
           onClose={this.handleCloseModal}
           noCloseLabel
           contentLabel="Remove Vendor"
-          appElement={document.querySelector('#app')}
+          appElement={rootDomNode}
         >
           <ModalContent>
             <Title>Are you sure you want to remove this vendor?</Title>

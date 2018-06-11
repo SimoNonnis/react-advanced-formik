@@ -16,7 +16,7 @@ export function* requestVendorsWorkerSaga(action) {
   } catch (error) {
     yield put(clearBanners());
     yield put(rejectGetVendors());
-    yield put(createSystemBanner({ message: 'Error. Please call customer services.' }));
+    yield put(createSystemBanner({ message: 'There was a problem getting the contact list.' }));
   }
 }
 

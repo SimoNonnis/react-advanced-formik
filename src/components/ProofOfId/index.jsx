@@ -5,6 +5,7 @@ import { Map } from 'immutable';
 
 import UploadPoId from 'components/UploadDoc/UploadPoId';
 import { requestDeletePoId } from 'actions/documents';
+import rootDomNode from 'utils/rootDomNode';
 import { Spinner, Button, Bin, ModalBox } from '@housesimple/react-components';
 
 import {
@@ -100,7 +101,7 @@ class ProofOfId extends Component {
               isOpen={isOpen}
               onClose={this.handleModalClick}
               contentLabel="Upload Photo ID"
-              appElement={document.querySelector('#app')}
+              appElement={rootDomNode}
             >
               <UploadPoId
                 propertyId={propertyId}

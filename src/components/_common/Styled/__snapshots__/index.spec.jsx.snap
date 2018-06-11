@@ -6,6 +6,12 @@ exports[`Test _common styled components Test <AcceptedDocument /> component shou
 />
 `;
 
+exports[`Test _common styled components Test <AdditionalInfo /> component should render AdditionalInfo correctly 1`] = `
+<span
+  className="sc-kpOJdX kFnvZr"
+/>
+`;
+
 exports[`Test _common styled components Test <ConfirmationIcon /> component should render ConfirmationIcon correctly with theme 1`] = `
 <Confirmation
   className="sc-jTzLTM frXRWe"

@@ -7,7 +7,8 @@ export const Container = styled.div`
   ${({ theme: { color }, type }) => type === 'success' && `background-color: ${color.lightGreen}`};
   padding: ${({ theme }) => theme.spacing.md};
   position: fixed;
-  top: 15%;
+  top: 10%;
+  right: 5%;
   z-index: 3;
   max-width: 80%;
   text-align: center;

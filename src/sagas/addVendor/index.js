@@ -1,6 +1,6 @@
 import { put, call, takeLatest, select } from 'redux-saga/effects';
 import { authTokenSelector } from 'selectors/authSelector';
-import { clearBanners, createSystemBanner } from 'actions/banner';
+import { clearBanners, createSuccessBanner, createSystemBanner } from 'actions/banner';
 import { requestAddVendor, successAddVendor, rejectAddVendor } from 'actions/vendors';
 
 import { addVendor } from 'api';
@@ -14,10 +14,11 @@ export function* requestAddVendorWorkerSaga(action) {
 
     yield put(clearBanners());
     yield put(successAddVendor(data));
+    yield put(createSuccessBanner({ message: 'Contact added successfully.' }));
   } catch (error) {
     yield put(clearBanners());
     yield put(rejectAddVendor());
-    yield put(createSystemBanner({ message: 'Error. There was an error adding the contact.' }));
+    yield put(createSystemBanner({ message: 'There was a problem adding this contact.' }));
   }
 }
 

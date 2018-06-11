@@ -1,6 +1,6 @@
 import { put, call, takeLatest, select } from 'redux-saga/effects';
 import { authTokenSelector } from 'selectors/authSelector';
-import { clearBanners, createSystemBanner } from 'actions/banner';
+import { clearBanners, createUserBanner, createSystemBanner } from 'actions/banner';
 import {
   requestGetAddressesList,
   successGetAddressesList,
@@ -13,14 +13,28 @@ export function* requestGetAddressesListWorkerSaga(action) {
     const authToken = yield select(authTokenSelector);
     const requestObject = { ...action.payload, authToken };
     const response = yield call(getAddressesList, requestObject);
-    const addressesList = yield response.data;
+    const addressesList = response.data;
 
-    yield put(clearBanners());
-    yield put(successGetAddressesList({ addressesList }));
+    if (addressesList[0].Error) {
+      yield put(clearBanners());
+      yield put(rejectGetAddressesList());
+      yield put(
+        createUserBanner({
+          message: `There was a problem finding your address. Please enter address manually.`,
+        })
+      );
+    } else {
+      yield put(clearBanners());
+      yield put(successGetAddressesList({ addressesList }));
+    }
   } catch (error) {
     yield put(clearBanners());
     yield put(rejectGetAddressesList());
-    yield put(createSystemBanner({ message: 'Error. There was an error with you request.' }));
+    yield put(
+      createSystemBanner({
+        message: 'There was a problem finding your address. Please enter address manually.',
+      })
+    );
   }
 }
 

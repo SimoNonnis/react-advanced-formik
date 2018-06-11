@@ -23,6 +23,7 @@ import {
   ErrorRadios,
   ControlButton,
   SubmitButtonWrapper,
+  AdditionalInfo,
 } from 'components/_common/Styled';
 
 import { optionTypes, optionTitles, optionCountries, optionMonths } from '../options';
@@ -294,7 +295,11 @@ class FullForm extends Component {
                           render={({ field }) => (
                             <Input
                               error={showError(field.name)}
-                              label="First name (must be full legal name)"
+                              label={
+                                <span>
+                                  First name <AdditionalInfo>(full legal name)</AdditionalInfo>
+                                </span>
+                              }
                               id={`FirstNames${vendor.id}`}
                               {...field}
                             />

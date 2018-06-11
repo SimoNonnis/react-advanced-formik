@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test proofOfIdReducer should add new file obj to vendorsProofOfId 1`] = `
+Object {
+  "isLoading": Object {
+    "34": false,
+    "4": false,
+  },
+  "vendorsProofOfId": Object {
+    "34": Array [
+      Object {
+        "id": 80,
+        "label": "Overseas Passport",
+        "list": "A",
+        "mime_type": "image/png",
+        "path": "/admin/check/7/fetch-file/8",
+        "type": "proof_of_id_overseas_passport",
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 8,
+        "label": "Bank Statement",
+        "list": "B",
+        "mime_type": "image/png",
+        "path": "/admin/check/7/fetch-file/8",
+        "type": "proof_of_id_bank_society_or_union_statement",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Test proofOfIdReducer should build isLoading obj and vendorsProofOfId obj by vendor ID 1`] = `
+Object {
+  "isLoading": Object {
+    "34": false,
+    "4": false,
+  },
+  "vendorsProofOfId": Object {
+    "34": Array [
+      Object {
+        "id": 3,
+        "label": "UK Birth Certificate",
+        "list": "B",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/8/fetch-file/3",
+        "type": "proof_of_id_uk_birth_certificate",
+      },
+      Object {
+        "id": 4,
+        "label": "Utility Bill",
+        "list": "B",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/8/fetch-file/4",
+        "type": "proof_of_id_utility_bill_utility_statement_or_certificate_letter",
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 8,
+        "label": "Bank Statement",
+        "list": "B",
+        "mime_type": "image/png",
+        "path": "/admin/check/7/fetch-file/8",
+        "type": "proof_of_id_bank_society_or_union_statement",
+      },
+      Object {
+        "id": 9,
+        "label": "Blue Disabled Drivers Pass",
+        "list": "B",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/7/fetch-file/9",
+        "type": "proof_of_id_blue_disabled_drivers_pass",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Test proofOfIdReducer should delete file obj from vendorsProofOfId after calling successDeletePoId() 1`] = `
+Object {
+  "isLoading": Object {
+    "34": false,
+    "4": false,
+  },
+  "vendorsProofOfId": Object {
+    "34": Array [],
+    "4": Array [],
+  },
+}
+`;
+
+exports[`Test proofOfIdReducer should set new PoId empty array and isLoading false by vendor ID 1`] = `
+Object {
+  "isLoading": Object {
+    "3": false,
+  },
+  "vendorsProofOfId": Object {
+    "3": Array [],
+  },
+}
+`;

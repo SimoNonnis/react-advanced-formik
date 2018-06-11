@@ -1,6 +1,6 @@
 import { put, call, takeLatest, select } from 'redux-saga/effects';
 import { authTokenSelector } from 'selectors/authSelector';
-import { clearBanners, createSystemBanner } from 'actions/banner';
+import { clearBanners, createSuccessBanner, createSystemBanner } from 'actions/banner';
 import { requestDeletePoAd, successDeletePoAd, rejectDeletePoAd } from 'actions/documents';
 import { deleteDocument } from 'api';
 
@@ -13,10 +13,11 @@ export function* requestDeletePoAdWorkerSaga(action) {
     yield call(deleteDocument, requestObject);
     yield put(clearBanners());
     yield put(successDeletePoAd({ vendorId, documentId }));
+    yield put(createSuccessBanner({ message: 'The Proof of Address was removed successfully.' }));
   } catch (error) {
     yield put(clearBanners());
     yield put(rejectDeletePoAd());
-    yield put(createSystemBanner({ message: 'Error. Please try again.' }));
+    yield put(createSystemBanner({ message: 'There was a problem deleting your file.' }));
   }
 }
 

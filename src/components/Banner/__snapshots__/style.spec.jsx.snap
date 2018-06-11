@@ -4155,12 +4155,12 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="sc-htpNat jnkzCG"
+    className="sc-htpNat htJBHI"
     type="success"
 />,
   "nodes": Array [
     <div
-      className="sc-htpNat jnkzCG"
+      className="sc-htpNat htJBHI"
       type="success"
 />,
   ],
@@ -4507,7 +4507,7 @@ ShallowWrapper {
         },
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "jnkzCG",
+          "generatedClassName": "htJBHI",
           "theme": Object {
             "base": Object {
               "fontFamily": "\\"proxima-nova\\", \\"Open Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
@@ -4687,12 +4687,12 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="sc-htpNat jnkzCG"
+          className="sc-htpNat htJBHI"
           type="success"
 />,
         "_debugID": 6,
         "_renderedOutput": <div
-          className="sc-htpNat jnkzCG"
+          className="sc-htpNat htJBHI"
           type="success"
 />,
       },
@@ -4881,12 +4881,12 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="sc-htpNat xsKAB"
+    className="sc-htpNat UCYaU"
     type="system"
 />,
   "nodes": Array [
     <div
-      className="sc-htpNat xsKAB"
+      className="sc-htpNat UCYaU"
       type="system"
 />,
   ],
@@ -5233,7 +5233,7 @@ ShallowWrapper {
         },
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "xsKAB",
+          "generatedClassName": "UCYaU",
           "theme": Object {
             "base": Object {
               "fontFamily": "\\"proxima-nova\\", \\"Open Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
@@ -5413,12 +5413,12 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="sc-htpNat xsKAB"
+          className="sc-htpNat UCYaU"
           type="system"
 />,
         "_debugID": 4,
         "_renderedOutput": <div
-          className="sc-htpNat xsKAB"
+          className="sc-htpNat UCYaU"
           type="system"
 />,
       },
@@ -5607,12 +5607,12 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="sc-htpNat jSbtRW"
+    className="sc-htpNat cUSbwb"
     type="user"
 />,
   "nodes": Array [
     <div
-      className="sc-htpNat jSbtRW"
+      className="sc-htpNat cUSbwb"
       type="user"
 />,
   ],
@@ -5959,7 +5959,7 @@ ShallowWrapper {
         },
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "jSbtRW",
+          "generatedClassName": "cUSbwb",
           "theme": Object {
             "base": Object {
               "fontFamily": "\\"proxima-nova\\", \\"Open Sans\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif",
@@ -6139,12 +6139,12 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="sc-htpNat jSbtRW"
+          className="sc-htpNat cUSbwb"
           type="user"
 />,
         "_debugID": 2,
         "_renderedOutput": <div
-          className="sc-htpNat jSbtRW"
+          className="sc-htpNat cUSbwb"
           type="user"
 />,
       },

@@ -25,6 +25,7 @@ import {
   IconUpload,
   SubmitButtonWrapper,
   LoaderWrapper,
+  AdditionalInfo,
 } from './';
 
 describe('Test _common styled components', () => {
@@ -230,6 +231,13 @@ describe('Test _common styled components', () => {
   describe('Test <LoaderWrapper /> component', () => {
     it('should render LoaderWrapper correctly with theme', () => {
       const wrapper = shallow(<LoaderWrapper />);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+  });
+
+  describe('Test <AdditionalInfo /> component', () => {
+    it('should render AdditionalInfo correctly', () => {
+      const wrapper = shallow(<AdditionalInfo />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });

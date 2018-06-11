@@ -22,7 +22,7 @@ const documentTypeListReducer = handleActions(
           documentTypeList: Map(payload),
         })
       ),
-    [rejectGetDocumentTypeList]: () => state => state.set('isFetchingDocumentTypeList', false),
+    [rejectGetDocumentTypeList]: state => state.set('isFetchingDocumentTypeList', false),
   },
   initialState
 );

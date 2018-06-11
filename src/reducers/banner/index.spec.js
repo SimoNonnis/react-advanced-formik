@@ -1,8 +1,12 @@
-/* eslint-env jest */
-import { createSystemBanner, createUserBanner, clearBanners } from 'actions/banner';
+import {
+  clearBanners,
+  createSystemBanner,
+  createUserBanner,
+  createSuccessBanner,
+} from 'actions/banner';
 import banner from './';
 
-describe('banner reducer', () => {
+describe('Test banner reducer', () => {
   it('returns the initialState when the action is null', () => {
     expect(banner(undefined, {})).toMatchSnapshot();
   });
@@ -10,9 +14,12 @@ describe('banner reducer', () => {
     expect(banner(undefined, clearBanners())).toMatchSnapshot();
   });
   it('should set state message to payload and type to system', () => {
-    expect(banner(undefined, createSystemBanner('Error message'))).toMatchSnapshot();
+    expect(banner(undefined, createSystemBanner({ message: 'Error message' }))).toMatchSnapshot();
   });
   it('should set state message to payload and type to user', () => {
-    expect(banner(undefined, createUserBanner('Error message'))).toMatchSnapshot();
+    expect(banner(undefined, createUserBanner({ message: 'Error message' }))).toMatchSnapshot();
+  });
+  it('should set state message to payload and type to success', () => {
+    expect(banner(undefined, createSuccessBanner({ message: 'Error message' }))).toMatchSnapshot();
   });
 });

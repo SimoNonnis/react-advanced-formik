@@ -5,6 +5,7 @@ import { Map } from 'immutable';
 
 import UploadPoAd from 'components/UploadDoc/UploadPoAd';
 import { requestDeletePoAd } from 'actions/documents';
+import rootDomNode from 'utils/rootDomNode';
 import { Spinner, Button, Bin, ModalBox } from '@housesimple/react-components';
 
 import {
@@ -94,7 +95,7 @@ class ProofOfAddress extends Component {
               isOpen={isOpen}
               onClose={this.handleModalClick}
               contentLabel="Upload Proof of address"
-              appElement={document.querySelector('#app')}
+              appElement={rootDomNode}
             >
               <UploadPoAd
                 propertyId={propertyId}

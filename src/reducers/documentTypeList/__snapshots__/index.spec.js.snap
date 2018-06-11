@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test documentTypeListReducer should populate documentTypeList with payload when calling successGetDocumentTypeList() 1`] = `
+Object {
+  "documentTypeList": Object {
+    "identification_list_a": Array [
+      Object {
+        "description": "Current valid (signed) full UK Passport",
+        "label": "UK Passport",
+        "list": "A",
+        "type": "proof_of_id_uk_passport",
+      },
+      Object {
+        "description": "Current valid (signed) overseas Passport",
+        "label": "Overseas Passport",
+        "list": "A",
+        "type": "proof_of_id_overseas_passport",
+      },
+      Object {
+        "description": "Current UK photocard Driving Licence (provisional acceptable)",
+        "label": "UK Photocard Driving Licence",
+        "list": "A",
+        "type": "proof_of_id_uk_driving_licence",
+      },
+      Object {
+        "description": "Current EU photocard Driving Licence",
+        "label": "EU Photocard Driving Licence",
+        "list": "A",
+        "type": "proof_of_id_eu_driving_licence",
+      },
+      Object {
+        "description": "Current valid EEA Member State ID card",
+        "label": "EEA Member State ID Card",
+        "list": "A",
+        "type": "proof_of_id_eea_state_id",
+      },
+      Object {
+        "description": "Current biometric residence permit issued by UK Border Agency",
+        "label": "Biometric Residence Permit",
+        "list": "A",
+        "type": "proof_of_id_biometric_residence_permit",
+      },
+      Object {
+        "description": "Current Firearms/Shotgun Certificate",
+        "label": "Current Firearms Certificate",
+        "list": "A",
+        "type": "proof_of_id_firearm_shotgun_certificate",
+      },
+      Object {
+        "description": "Current UK Military Identity Card",
+        "label": "UK Military Identity Card",
+        "list": "A",
+        "type": "proof_of_id_uk_military_card",
+      },
+    ],
+    "identification_list_b": Array [
+      Object {
+        "description": "Bank, Building Society or Credit Union Statement dated within the last 3 months (not printed off the internet)",
+        "label": "Bank Statement",
+        "list": "B",
+        "type": "proof_of_id_bank_society_or_union_statement",
+      },
+      Object {
+        "description": "Benefits or pensions notification letter confirming the right to benefit",
+        "label": "Benefits or Pensions Letter",
+        "list": "B",
+        "type": "proof_of_id_benefits_or_pensions_notification_letter",
+      },
+      Object {
+        "description": "Blue disabled drivers pass",
+        "label": "Blue Disabled Drivers Pass",
+        "list": "B",
+        "type": "proof_of_id_blue_disabled_drivers_pass",
+      },
+      Object {
+        "description": "Current UK paper driving licence",
+        "label": "UK Paper Driving Licence",
+        "list": "B",
+        "type": "proof_of_id_current_uk_paper_driving_licence",
+      },
+      Object {
+        "description": "Local authority tax bill/council tax bill (we can only accept bills dated until the end of June of the year the client contract is signed)",
+        "label": "Tax Bill",
+        "list": "B",
+        "type": "proof_of_id_local_authority_tax_bill_or_council_tax_bill",
+      },
+      Object {
+        "description": "Medical Card/Certificate",
+        "label": "Medical Card/Certificate",
+        "list": "B",
+        "type": "proof_of_id_medical_card_or_certificate",
+      },
+      Object {
+        "description": "National Insurance Card",
+        "label": "National Insurance Card",
+        "list": "B",
+        "type": "proof_of_id_national_insurance_card",
+      },
+      Object {
+        "description": "UK Birth Certificate",
+        "label": "UK Birth Certificate",
+        "list": "B",
+        "type": "proof_of_id_uk_birth_certificate",
+      },
+      Object {
+        "description": "Utility Bill/Utility Statement or Certificate/Letter from a supplier of utilities dated within the last 3 months",
+        "label": "Utility Bill",
+        "list": "B",
+        "type": "proof_of_id_utility_bill_utility_statement_or_certificate_letter",
+      },
+    ],
+    "proof_of_address_list_c": Array [
+      Object {
+        "description": "Bank Statement (dated in the last three months) – may be an e-copy",
+        "label": "Bank Statement",
+        "list": "C",
+        "type": "proof_of_address_bank_statement",
+      },
+      Object {
+        "description": "Credit Card Statement (dated in the last three months) – may be an e-copy",
+        "label": "Credit Card Statement",
+        "list": "C",
+        "type": "proof_of_address_credit_card_statement",
+      },
+      Object {
+        "description": "Council Tax bill (we can only accept bills dated until the end of June of the year the client contract is signed)",
+        "label": "Council Tax Bill",
+        "list": "C",
+        "type": "proof_of_address_council_tax_bill",
+      },
+      Object {
+        "description": "Current mortgage statement (correspondence address and address the mortgage applies to must be the same)",
+        "label": "Mortgage Statement",
+        "list": "C",
+        "type": "proof_of_address_current_mortgage_statement",
+      },
+      Object {
+        "description": "Current TV licence",
+        "label": "TV Licence",
+        "list": "C",
+        "type": "proof_of_address_current_tv_licence",
+      },
+      Object {
+        "description": "Driving licence showing current address (paper OR card version) (provisional acceptable) (not acceptable if used as ID)",
+        "label": "Driving Licence",
+        "list": "C",
+        "type": "proof_of_address_driving_licence_with_current_address",
+      },
+      Object {
+        "description": "Homeowner’s current home insurance policy schedule",
+        "label": "Home Insurance Policy",
+        "list": "C",
+        "type": "proof_of_address_current_home_insurance_policy",
+      },
+      Object {
+        "description": "Home service provider bill, such as broadband or digital TV dated within the last three months",
+        "label": "Broadband or Digital TV Bill",
+        "list": "C",
+        "type": "proof_of_address_home_service_provider_bill",
+      },
+      Object {
+        "description": "Letter from the employer on company headed paper, signed and dated within the last three months (an email from a verified company email address is acceptable)",
+        "label": "Letter from the Employer",
+        "list": "C",
+        "type": "proof_of_address_letter_from_the_employer_on_company",
+      },
+      Object {
+        "description": "Recent documentation confirming the applicant will be/is receiving local housing allowance or housing benefit",
+        "label": "Housing Allowance/Benefit",
+        "list": "C",
+        "type": "proof_of_address_house_benefits_documentation",
+      },
+      Object {
+        "description": "Tenancy agreement signed and dated within the last six months (the customer being checked must be a named tenant on the tenancy agreement)",
+        "label": "Tenancy Agreement",
+        "list": "C",
+        "type": "proof_of_address_tenancy_agreement",
+      },
+      Object {
+        "description": "Utility bill dated within the last three months",
+        "label": "Utility Bill",
+        "list": "C",
+        "type": "proof_of_address_utility_bill",
+      },
+      Object {
+        "description": "Letter from the NHS writing to confirm the customer is living at the address",
+        "label": "Letter from the NHS",
+        "list": "C",
+        "type": "proof_of_address_letter_from_the_nhs",
+      },
+      Object {
+        "description": "Letter from bank to confirm the customer is living at the property – no other bank letter is acceptable",
+        "label": "Letter from the Bank",
+        "list": "C",
+        "type": "proof_of_address_letter_from_bank",
+      },
+    ],
+  },
+  "isFetchingDocumentTypeList": false,
+}
+`;

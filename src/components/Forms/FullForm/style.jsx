@@ -36,7 +36,7 @@ export const VendorFullName = styled(H2)`
 
   margin: 0;
   margin-left: ${({ theme }) => theme.spacing.sm};
-  padding: 12px 0 7px;
+  padding: 7px 0;
 `;
 
 export const VendorLastName = styled.span`

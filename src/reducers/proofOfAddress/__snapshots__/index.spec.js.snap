@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test proofOfAddressReducer should add new file obj to vendorsProofOfAddress 1`] = `
+Object {
+  "isLoading": Object {
+    "34": false,
+    "4": false,
+  },
+  "vendorsProofOfAddress": Object {
+    "34": Array [
+      Object {
+        "id": 40,
+        "label": "Mortgage Statement",
+        "list": "C",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/5/fetch-file/2",
+        "type": "proof_of_address_current_mortgage_statement",
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 2,
+        "label": "Bank Statement",
+        "list": "C",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/5/fetch-file/2",
+        "type": "proof_of_address_bank_statement",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Test proofOfAddressReducer should build isLoading obj and vendorsProofOfAddress obj by vendor ID 1`] = `
+Object {
+  "isLoading": Object {
+    "34": false,
+    "4": false,
+  },
+  "vendorsProofOfAddress": Object {
+    "34": Array [
+      Object {
+        "id": 5,
+        "label": "TV Licence",
+        "list": "C",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/6/fetch-file/5",
+        "type": "proof_of_address_current_tv_licence",
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 2,
+        "label": "Bank Statement",
+        "list": "C",
+        "mime_type": "image/jpeg",
+        "path": "/admin/check/5/fetch-file/2",
+        "type": "proof_of_address_bank_statement",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Test proofOfAddressReducer should delete file obj from vendorsProofOfAddress 1`] = `
+Object {
+  "isLoading": Object {
+    "34": false,
+    "4": false,
+  },
+  "vendorsProofOfAddress": Object {
+    "34": Array [],
+    "4": Array [],
+  },
+}
+`;
+
+exports[`Test proofOfAddressReducer should set new POAD empty array and isLoading false by vendor ID 1`] = `
+Object {
+  "isLoading": Object {
+    "3": false,
+  },
+  "vendorsProofOfAddress": Object {
+    "3": Array [],
+  },
+}
+`;

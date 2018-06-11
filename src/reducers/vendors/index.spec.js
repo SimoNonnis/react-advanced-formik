@@ -8,19 +8,19 @@ import {
   successDeleteVendor,
 } from 'actions/vendors';
 
+import { mockedVendors, mockedVendor } from 'reducers/mocks';
+
 import {
   mockedRequestState,
-  mockedVendors,
   mockedState,
   mockedStateAfterDelete,
-  mockedVendor,
   mockedStateAfterAdd,
 } from './mocks';
 
 import vendorsReducer, { initialState } from './';
 
-describe('vendorsReducer', () => {
-  it('returns the initialState when the action is null', () => {
+describe('Test vendorsReducer', () => {
+  it('should return the initialState when the action is null', () => {
     expect(vendorsReducer(undefined, {})).toBe(initialState);
   });
   it('should set isFetchingVendors to true', () => {

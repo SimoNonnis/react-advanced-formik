@@ -1,6 +1,6 @@
 import { put, call, takeLatest, select } from 'redux-saga/effects';
 import { authTokenSelector } from 'selectors/authSelector';
-import { clearBanners, createSystemBanner } from 'actions/banner';
+import { clearBanners, createSuccessBanner, createSystemBanner } from 'actions/banner';
 import { requestUpdateVendor, successUpdateVendor, rejectUpdateVendor } from 'actions/vendors';
 import { updateVendor } from 'api';
 
@@ -13,10 +13,11 @@ export function* requestUpdateVendorWorkerSaga(action) {
 
     yield put(clearBanners());
     yield put(successUpdateVendor());
+    yield put(createSuccessBanner({ message: 'Contact info updated successfully.' }));
   } catch (error) {
     yield put(clearBanners());
     yield put(rejectUpdateVendor());
-    yield put(createSystemBanner({ message: 'Error. Please call customer services.' }));
+    yield put(createSystemBanner({ message: 'There was a problem updating the contact info.' }));
   }
 }
 

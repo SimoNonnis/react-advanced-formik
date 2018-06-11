@@ -14,7 +14,7 @@ exports[`Test <Head /> component should render Head correctly with theme 1`] = `
 
 exports[`Test <VendorFullName /> component should render VendorFullName correctly with theme 1`] = `
 <H2
-  className="sc-EHOje gOGFOr"
+  className="sc-EHOje cNogbS"
   theme={
     Object {
       "base": Object {

@@ -18,7 +18,7 @@ export function* requestDocumentTypeListWorkerSaga(action) {
     yield put(successGetDocumentTypeList(data));
   } catch (error) {
     yield put(rejectGetDocumentTypeList());
-    yield put(createSystemBanner({ message: 'Error getting document type list.' }));
+    yield put(createSystemBanner({ message: 'There was a problem getting document types list.' }));
   }
 }
 

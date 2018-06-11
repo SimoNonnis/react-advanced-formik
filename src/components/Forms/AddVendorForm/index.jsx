@@ -13,6 +13,7 @@ import {
   LegendRadios,
   ErrorRadios,
   SubmitButtonWrapper,
+  AdditionalInfo,
 } from 'components/_common/Styled';
 
 import { optionTypes, optionTitles } from '../options';
@@ -159,7 +160,11 @@ const AddVendorForm = ({ handleFormSubmit }) => (
                   render={({ field }) => (
                     <Input
                       error={showError(field.name)}
-                      label="First name (must be full legal name)"
+                      label={
+                        <span>
+                          First name <AdditionalInfo>(full legal name)</AdditionalInfo>
+                        </span>
+                      }
                       id="FirstNames"
                       {...field}
                     />

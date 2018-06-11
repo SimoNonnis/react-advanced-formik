@@ -6,6 +6,7 @@ import { Button, ModalBox } from '@housesimple/react-components';
 import AddVendorForm from 'components/Forms/AddVendorForm';
 import { requestAddVendor } from 'actions/vendors';
 import modelPayload from 'utils/modelPayload';
+import rootDomNode from 'utils/rootDomNode';
 
 import { AddVendorContainer } from './style';
 
@@ -45,7 +46,7 @@ class AddVendor extends PureComponent {
           isOpen={isOpen}
           onClose={this.handleClick}
           contentLabel="+ Add Contact"
-          appElement={document.querySelector('#app')}
+          appElement={rootDomNode}
         >
           <AddVendorForm handleFormSubmit={this.handleFormSubmit} />
         </ModalBox>

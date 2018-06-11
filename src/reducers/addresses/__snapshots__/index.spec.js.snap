@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test addressesReducer should add postcode key/value object to addresses array by vendorId 1`] = `
+Object {
+  "addresses": Object {
+    "35": Array [
+      Object {
+        "id": 1,
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 1,
+      },
+      Object {
+        "id": 2,
+      },
+    ],
+    "5": Array [
+      Object {
+        "postcode": "co10 2ed",
+      },
+    ],
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": true,
+}
+`;
+
+exports[`Test addressesReducer should add response payload to addresses after successAddAddress() 1`] = `
+Object {
+  "addresses": Object {
+    "5": Object {
+      "-1": Object {
+        "building_name": null,
+        "building_number": "892",
+        "county": "Suffolk",
+        "id": 2,
+        "position": 1,
+        "postcode": "WF9 2JY",
+        "street": "Alexander Junctions",
+        "sub_building": null,
+        "town": "Graceview",
+      },
+    },
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should add response payload to addresses after successGetAddressInfo() 1`] = `
+Object {
+  "addresses": Object {
+    "5": Object {
+      "-1": Object {
+        "building_name": "Test",
+        "building_number": "Test",
+        "county": "Test",
+        "postcode": "Test",
+        "street": "Test",
+        "sub_building": "Test",
+        "town": "Test",
+      },
+    },
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should add response payload to addressesList after successGetAddressesList() 1`] = `
+Object {
+  "addresses": Object {},
+  "addressesList": Array [
+    Object {
+      "id": 100,
+      "place": "anywhere",
+      "street": "Test street",
+    },
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should create addresses array for a newly created vendor 1`] = `
+Object {
+  "addresses": Object {
+    "3": Array [],
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should create new address object by vendorId 1`] = `
+Object {
+  "addresses": Object {
+    "35": Array [
+      Object {
+        "id": 1,
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 1,
+      },
+      Object {
+        "id": 2,
+      },
+    ],
+    "5": Array [
+      Object {
+        "postcode": "",
+      },
+    ],
+  },
+  "addressesList": Array [],
+  "isDisabled": true,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should delete address after calling successDeleteAddress() 1`] = `
+Object {
+  "addresses": Object {
+    "35": Array [],
+    "4": Array [
+      Object {
+        "id": 1,
+      },
+      Object {
+        "id": 2,
+      },
+    ],
+    "5": Array [],
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should delete newly added address object by vendorId 1`] = `
+Object {
+  "addresses": Object {
+    "35": Array [
+      Object {
+        "id": 1,
+      },
+    ],
+    "4": Array [
+      Object {
+        "id": 1,
+      },
+      Object {
+        "id": 2,
+      },
+    ],
+    "5": Array [],
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should set addresses by vendor ID 1`] = `
+Object {
+  "addresses": Object {
+    "34": Array [
+      Object {
+        "building_name": null,
+        "building_number": "92",
+        "county": "Suffolk",
+        "id": 5,
+        "position": 0,
+        "postcode": "G65 9BG",
+        "street": "Dave Drive",
+        "sub_building": null,
+        "town": "Bellview",
+      },
+    ],
+    "4": Array [
+      Object {
+        "building_name": null,
+        "building_number": "202",
+        "county": "Suffolk",
+        "id": 1,
+        "position": 0,
+        "postcode": "DD1 2NF",
+        "street": "Amelia Courts",
+        "sub_building": null,
+        "town": "Lake Staceyview",
+      },
+      Object {
+        "building_name": null,
+        "building_number": "86",
+        "county": "Suffolk",
+        "id": 2,
+        "position": 1,
+        "postcode": "SG6 1PR",
+        "street": "Evelyn Springs",
+        "sub_building": null,
+        "town": "Walkermouth",
+      },
+    ],
+  },
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Test addressesReducer should set isLoading to true after calling requestAddAddress() 1`] = `
+Object {
+  "addresses": Object {},
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": true,
+}
+`;
+
+exports[`Test addressesReducer should set isLoading to true after calling requestGetAddressInfo() 1`] = `
+Object {
+  "addresses": Object {},
+  "addressesList": Array [],
+  "isDisabled": false,
+  "isLoading": true,
+}
+`;

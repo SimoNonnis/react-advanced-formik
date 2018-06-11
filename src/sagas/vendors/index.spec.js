@@ -1,16 +1,13 @@
-/* eslint-env jest */
 import { put, call, takeLatest } from 'redux-saga/effects';
 import { requestGetVendors } from 'actions/vendors';
 import { getVendors } from 'api';
 import { requestVendorsWorkerSaga, requestVendorsWatcherSaga } from './';
 
-const action = { type: 'REQUEST_GET_VENDORS' };
-
 const mockSuccessGetVendors = [{ id: 1 }, { id: 2 }];
 
-describe('Test get vendors sagas', () => {
+describe('Test getVendors', () => {
   describe('requestVendorsWatcherSaga', () => {
-    const saga = requestVendorsWatcherSaga(action);
+    const saga = requestVendorsWatcherSaga(requestGetVendors);
     let output = null;
 
     it('should call requestVendorsWorkerSaga', () => {
@@ -22,7 +19,7 @@ describe('Test get vendors sagas', () => {
 
   describe('requestVendorsWorkerSaga', () => {
     describe('Test API success route', () => {
-      const saga = requestVendorsWorkerSaga(action);
+      const saga = requestVendorsWorkerSaga(requestGetVendors);
       let output = null;
 
       it('should call getVendors with request object', done => {
@@ -56,7 +53,7 @@ describe('Test get vendors sagas', () => {
     });
 
     describe('Test catch route', () => {
-      const saga = requestVendorsWorkerSaga(action);
+      const saga = requestVendorsWorkerSaga(requestGetVendors);
       let output = null;
 
       it('should put REJECT_GET_VENDORS with correct data if error is thrown', done => {

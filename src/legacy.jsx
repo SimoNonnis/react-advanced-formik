@@ -21,6 +21,7 @@ injectGlobal([
   .ReactModal__Content,
   #app {
     font-family: proxima-nova, sans-serif;
+    color: #1D3141;
 
     h1, h2, h3 {
       font-family: proxima-nova, sans-serif;

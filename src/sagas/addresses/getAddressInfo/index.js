@@ -26,7 +26,7 @@ export function* requestGetAddressInfoWorkerSaga(action) {
   } catch (error) {
     yield put(clearBanners());
     yield put(rejectGetAddressInfo());
-    yield put(createSystemBanner({ message: 'Error. There was an error with you request.' }));
+    yield put(createSystemBanner({ message: 'There was a problem with the address lookup.' }));
   }
 }
 

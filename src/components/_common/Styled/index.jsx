@@ -175,3 +175,8 @@ export const LoaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const AdditionalInfo = styled.span`
+  font-weight: 400;
+  font-size: 12px;
+`;
